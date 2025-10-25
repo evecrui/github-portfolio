@@ -213,14 +213,18 @@ button {
 }
 
 .header {
-  height: 8em;
-  max-width: 1100px;
-  width: 95%;
+  position: fixed;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 4em;
   margin: 0 auto;
   justify-content: space-between;
+  z-index: 999; /* Ensures it stays on top of other elements */
 }
 
 main {
+  padding-top: 40px; /* Adjust this value to be equal to the header's height + desired spacing */
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
