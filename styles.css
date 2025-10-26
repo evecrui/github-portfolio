@@ -314,12 +314,15 @@ main {
 }
 
 .project {
-  cursor: pointer;
   padding: 1em;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+}
+
+.wrap{
+    cursor: pointer;
 }
 
 .project:hover {
