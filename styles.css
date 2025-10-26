@@ -314,6 +314,7 @@ main {
 }
 
 .project {
+  cursor: pointer;
   padding: 1em;
   margin: 0 auto;
   text-align: center;
