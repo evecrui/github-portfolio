@@ -245,12 +245,12 @@ main {
 }
 
 .section {
-  margin-top: 5em;
+  margin-top: 3.5em;
 }
 
 .section__title {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 
@@ -284,7 +284,6 @@ main {
 }
 
 .about__role {
-  margin-top: 1.2em;
 }
 
 .about__desc {
@@ -294,7 +293,7 @@ main {
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 0.7em;
 }
 
 .about .link--icon {
@@ -310,11 +309,12 @@ main {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  height: 60em;
   grid-gap: 2em;
 }
 
 .project {
-  padding: 2em;
+  padding: 1em;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
