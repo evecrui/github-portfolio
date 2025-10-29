@@ -339,7 +339,9 @@ main {
 
 .project__description {
   margin-top: 1em;
-  font-size: 1.5em;
+}
+
+.panel__description {
 }
 
 .project__stack {
