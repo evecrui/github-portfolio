@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/9772da0aa3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Eve Cruickshank</title>
+  </head>
+  <body class="dark" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://evecrui.github.io/github-portfolio/" class="link"
+          >EC.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <img src="WFCBanner.png" alt="WFC Banner" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="about center">
+        <h1><span class="about__name">Wave Function Collapse</span></h1>
+        <h2 class="about__role">A PROD224 Project</h2>
+
+        <!-- Skills -->
+        <section class="skills" id="skills">
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain"><b>Unity</b></li>
+            <li class="skills__list-item btn btn--plain">C#</li>
+            <li class="skills__list-item btn btn--plain">Blender</li>
+            <li class="skills__list-item btn btn--plain"><b><span class="about__name">Proc Gen</span></b></li>
+          </ul>
+        </section>
+      </div>
+
+      <section id="description" class="section panels">
+          <div class="panels__grid">
+              <div class="panel">
+                  <img src="WFCGenerationLooped.gif" alt="WFC Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+              </div>
+              <div class="panel">
+                  <h1 class="panel__description">
+                      Final Outcome
+                  </h1>
+                  <p class="panel__description">
+                      <br />
+                      Wave function collapse is a <b>constraint solving program</b> that operates
+                      using <b>nodes</b> with defined <b>sockets</b>.
+                      The sockets tell the program which nodes can connect,
+                      and the available nodes slowly <b>collapse</b> to fill out the 3d grid.
+                  </p>
+              </div>
+          </div>
+          <div class="panels__grid">
+              <div class="panel">
+                  <h1 class="panel__description">
+                      Tutorial Phase
+                  </h1>
+                  <p class="panel__description">
+                      <br />
+                      In the tutorial phase, I set up <b>sockets</b> for 2D generation, and set up the code for the <b>generation algorithm</b>.
+                  </p>
+                  <p><br /></p>
+                  <iframe width="520" height="300" src="https://www.youtube.com/embed/2SuvO4Gi7uY?si=bPLZdn0yVd7jWV93" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="panel">
+                  <img src="WFCSockets.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+              </div>
+          </div>
+          <div class="panels__grid">
+              <div class="panel">
+                  <img src="WFCBanner.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+              </div>
+              <div class="panel">
+                  <h1 class="panel__description">
+                      Creative Phase
+                  </h1>
+                  <p class="panel__description">
+                      <br />
+                      In the creative phase, I set up <b>vertical sockets</b>, finally allowing <b>3D generation</b>. <br /><br />I created <b>basic 3D nodes</b>, towers, walls, rooves. Weights were used to control the <b>likelyhood</b> of different nodes, and I added pauses between the placement of each element to <b>display the generation</b>.
+                  </p>
+              </div>
+          </div>
+          <div class="panels__grid">
+              <div class="panel">
+                  <h1 class="panel__description">
+                      Further Development
+                  </h1>
+                  <p class="panel__description">
+                      <br />
+                      Further development will include more <b>layers</b> put onto the algorithm, with randomly generated <b>points of interest</b>, and the buildings built around them. <br /> <br />After this, it can be used within other projects that require <b>civilization</b> or <b>cities</b>.
+                  </p>
+                  <p><br /></p>
+              </div>
+              <div class="panel">
+                  <img src="pyramidVector.jpg" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+              </div>
+          </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/rajshekhar26/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Created By Eve Cruickshank
+        <br>Template by Raj Shekhar
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
