@@ -17,7 +17,7 @@
   <body class="dark" id="top">
     <header class="header center">
       <h3>
-        <a href="https://evecrui.github.io/github-portfolio/" class="link"
+        <a href="https://evecrui.github.io/github-portfolio/" class="link" style="padding-bottom: 2%;"
           >EC.</a
         >
       </h3>
@@ -51,55 +51,53 @@
 
     <main>
       <!-- About -->
-      <div class="about top">
-            <video width="100%" autoplay muted loop>
-            <source src="StaticRecording.mp4" type="video/mp4">
-            <source src="StaticRecording.mp4" type="video/ogg">
-            Your browser does not support the video tag.
-            </video>
-            
-            <div class="overlay" style="background:none; max-height: 3%;">
-                <div class="panels__grid" style="background-color: var(--clr-bg); border-bottom: 7px solid var(--clr-primary); padding-top: 1%;">
-                    <div class="panel">
-                        <h1 style="background:none;"><span class="about__name">UE5 Level Design</span></h1>
-                        <h2 style="background:none;" class="about__role">A PROD387 Project</h2>
-                    </div>
-
-                    <!-- Skills -->
-                    <div class="panel" style="background:none; padding-top: 9%;">
-                        <section style="background:none;" class="skills" id="skills">
-                        <ul style="background:none;" class="skills__list">
-                            <li class="skills__list-item btn btn--plain"><b>Level Design</b></li>
-                            <li class="skills__list-item btn btn--plain">Unreal Engine 5</li>
-                            <li class="skills__list-item btn btn--plain">Blockout</li>
-                            <li class="skills__list-item btn btn--plain">Environment Art</li>
-                            <li class="skills__list-item btn btn--plain">Blockout</li>
-                            <li class="skills__list-item btn btn--plain">3D</li>
-                        </ul>
-                        </section>
-                    </div>
-                </div>
-                
-                <div style="padding-top: 1%; background-color: var(--clr-bg-trans); padding-left: 5%; padding-right: 5%; padding-bottom: 5%;" id="collection-2" class="collection layout-stack">
-                    <h2 style="background:none;" class="about__role">Iterations Overview</h2>
-                    <div style="background:none;" class="scrolly-rail-wrapper">
-                    <scrolly-rail data-control-previous="collection-2-btn-previous" data-control-next="collection-2-btn-next">
-                        <ol class="collection-list" role="list">
-                        <li class="placeholder-item">1</li>
-                        <li class="placeholder-item">2</li>
-                        <li class="placeholder-item">3</li>
-                        <li class="placeholder-item">4</li>
-                        <li class="placeholder-item">5</li>
-                        <li class="placeholder-item">6</li>
-                        <li class="placeholder-item">7</li>
-                        <li class="placeholder-item">
-                            <img src="LevelTopDownPathCleanFinal.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                        </li>
-                        </ol>
-                    </scrolly-rail>
-                    </div>
+      <div class="about">
+          <div class="overlay" style="width: 35%; height: 35%; right:0%; bottom:23.5%">
+            <div style="padding-bottom: 5%; background: none;">
+              <h2 style="background:none;"><span class="about__name">UE5 Level Design</span></h1>
+              <h4 style="background:none;" class="about__role">A PROD387 Project</h2>
+            </div>
+              <!-- Skills -->
+              <section class="skills" id="skills">
+                <ul style="background:none;" class="skills__list">
+                    <li class="skills__list-item btn btn--plain"><b>Level Design</b></li>
+                    <li class="skills__list-item btn btn--plain">Unreal Engine 5</li>
+                    <li class="skills__list-item btn btn--plain">Blockout</li>
+                    <li class="skills__list-item btn btn--plain">Environment Art</li>
+                    <li class="skills__list-item btn btn--plain">3D</li>
+                </ul>
+              </section>
+          </div>
+                  
+          <div class="overlay" style="bottom:0%; height: 23.5%; text-align: center;">
+            <div style="padding-top: 1%; background:none" id="collection-2" class="collection layout-stack">
+                <h3 style="background:none;" class="about__role">Iterations Overview</h2>
+                <div style="background:none;" class="scrolly-rail-wrapper">
+                <scrolly-rail data-control-previous="collection-2-btn-previous" data-control-next="collection-2-btn-next">
+                    <ol class="collection-list" role="list">
+                    <li class="placeholder-item">1</li>
+                    <li class="placeholder-item">2</li>
+                    <li class="placeholder-item">3</li>
+                    <li class="placeholder-item">4</li>
+                    <li class="placeholder-item">5</li>
+                    <li class="placeholder-item">6</li>
+                    <li class="placeholder-item">7</li>
+                    <li class="placeholder-item">
+                        <img src="LevelTopDownPathCleanFinal.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                    </li>
+                    </ol>
+                </scrolly-rail>
                 </div>
             </div>
+          </div>
+            <div class="panel" style="padding-top:3%; padding-bottom: 0%;">
+                <video width="100%" autoplay muted loop>
+                <source src="StaticRecording.mp4" type="video/mp4">
+                <source src="StaticRecording.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </div>
+                
+        </div>
 
 
       <section id="description" class="section panels">
@@ -109,14 +107,13 @@
               </div>
               <div class="panel">
                   <h1 class="panel__description">
-                      Final Outcome
+                      Project Overview
                   </h1>
                   <p class="panel__description">
                       <br />
-                      Wave function collapse is a <b>constraint solving program</b> that operates
-                      using <b>nodes</b> with defined <b>sockets</b>.
-                      The sockets tell the program which nodes can connect,
-                      and the available nodes slowly <b>collapse</b> to fill out the 3d grid.
+                      This level design project was created to hone my <b>3D level design skills</b>, along with reinforcing the importance of starting by <b>blocking out</b> the level instead of going straight to graphics.
+                      <br><br>The specific <b>design outcomes</b> required for this level were an exploration section, a sneaking section, and an escape section.
+                      <br><br>I went for a <b>cyberpunk</b> style, with a mechanic side-focus on momentum jumps alongside the main mechanic of the energy-bow. I went through <b></b> 
                   </p>
               </div>
           </div>
