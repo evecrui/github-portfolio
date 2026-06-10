@@ -41,6 +41,11 @@ body {
 
 .dark {
   --clr-bg: #23283e;
+  --clr-bg-l5: #3a4370;
+  --clr-bg-l4: #313b5c;
+  --clr-bg-l3: #30375c;
+  --clr-bg-l2: #2d3250;
+  --clr-bg-l1: #262a44;
   --clr-bg-trans: #23283ed3;
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
