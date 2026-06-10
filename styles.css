@@ -329,18 +329,19 @@ main {
 }
 
 .panels__grid {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
     padding: 1em;
     place-items: center;
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 60% 35%;
     grid-gap: 0.7em;
-    border-top: 7px solid var(--clr-primary);
 }
 
 .panel {
-    grid-template-columns: repeat(auto-fit, minmax(5em, 10em));
+    grid-template-columns: repeat(auto-fit, minmax(5em, 19em));
 }
 
 .project {
@@ -491,10 +492,12 @@ main {
 }
 
 .scroll-container-2 {
-    width: clamp(140px, 32vw, 550px);
-    height: clamp(120px, 38vw, 650px);
+    width: clamp(140px, 35vw, 700px);
+    height: clamp(180px, 42vw, 700px);
     margin: 0 auto;
     overflow:scroll;
+    border: 2px solid var(--clr-primary);
+    border-radius: 30px;
 }
 
 .scroll-container-2-shorter {
@@ -534,7 +537,6 @@ ol li div.card {
   background-color: var(--clr-bg-alt);
   border-radius: 9px;
   align-content: center;
-  height: clamp(120px, 35vw, 570px);
-  width: 20vw;
+  height: clamp(100px, 26vw, 400px);
+  width: 25vw;
 }
-
