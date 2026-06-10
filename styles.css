@@ -522,7 +522,7 @@ main {
 
 .scroll-container-2-even-shorter-and-longer {
     width: clamp(200px, 57vw, 1600px);
-    height: clamp(40px, 19vw, 280px);
+    height: clamp(40px, 16vw, 200px);
     margin: 0 auto;
     overflow:scroll;
 }
@@ -558,6 +558,6 @@ ol li div.card-small {
   background-color: var(--clr-bg-alt);
   border-radius: 9px;
   align-content: center;
-  height: clamp(100px, 26vw, 300px);
-  width: 15vw;
+  height: clamp(100px, 20vw, 250px);
+  width: 12vw;
 }
