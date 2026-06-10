@@ -70,11 +70,11 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(24px, 6vw, 60px);
+  font-size: clamp(32px, 3vw, 60px);
 }
 
 h2 {
-  font-size: clamp(20px, 4.2vw, 70px);
+  font-size: clamp(15px, 4vw, 70px);
 }
 
 h3 {
@@ -85,8 +85,16 @@ h4 {
   font-size: clamp(10px, 1.5vw, 50px);
 }
 
+p, ol, ul {
+  font-size: clamp(9px, 1.05vw, 30px);
+}
+
 ul {
   list-style-type: none;
+}
+
+.ul {
+  list-style-type:circle;
 }
 
 a {
@@ -317,13 +325,17 @@ main {
 
 .panels__grid {
     padding: 1em;
+    place-items: center;
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-    grid-gap: 2em;
-    padding-top: 2em;
+    grid-template-columns: 49% 49%;
+    grid-gap: 0.7em;
     border-top: 7px solid var(--clr-primary);
+}
+
+.panel {
+    grid-template-columns: repeat(auto-fit, minmax(5em, 10em));
 }
 
 .project {
@@ -357,9 +369,6 @@ main {
 
 .project__description {
   margin-top: 1em;
-}
-
-.panel__description {
 }
 
 .project__stack {
@@ -476,144 +485,51 @@ main {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@layer base, patterns, components, utils;
-
-@layer components {
-  /* Base scrolly-rail component styles */
-  scrolly-rail {
-    display: flex;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-
-    @media (prefers-reduced-motion: no-preference) {
-      scroll-behavior: smooth;
-    }
-  }
+.scroll-container-2 {
+    width: clamp(140px, 32vw, 550px);
+    height: clamp(120px, 38vw, 650px);
+    margin: 0 auto;
+    overflow:scroll;
 }
 
-@layer base {
-  :root {
-    --text-1: #0f172a;
-    --text-2: #64748b;
-    --surface-1: #ffffff;
-    --surface-2: #f8fafc;
-    --surface-3: #f1f5f9;
-    --surface-4: #cbd5e1;
-    --surface-5: #64748b;
-    --surface-translucent: hsla(210 40% 98% / 0.8);
-
-    --border-color: var(--surface-5);
-    --border-color-subtle: var(--surface-4);
-    --border-color-highlight: var(--surface-3);
-    --scrollbar-color: var(--text-2) var(--surface-3);
-
-    --space-xs: 0.25rem;
-    --space-s: 0.5rem;
-    --space-m: 1rem;
-    --space-l: 2rem;
-    --space-xl: 3rem;
-
-    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
-    --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-
-  body {
-    display: grid;
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    color: var(--text-1);
-    background-color: var(--surface-2);
-  }
-
-  :where(ul, ol)[role="list"] {
-    list-style: none;
-    padding-inline-start: unset;
-  }
+.scroll-container-2-shorter {
+    width: clamp(140px, 32vw, 550px);
+    height: clamp(120px, 28vw, 400px);
+    margin: 0 auto;
+    overflow:scroll;
 }
 
-
-@layer components {
-
-  /* Custom component styles */
-  scrolly-rail {
-    --_block-gutter: var(--space-m);
-    --_inline-gutter: var(--space-l);
-
-    scroll-padding-inline-start: var(--_inline-gutter);
-    scrollbar-color: var(--scrollbar-color);
-    padding-inline: var(--_inline-gutter);
-    padding-block: var(--_block-gutter);
-    margin-block: calc(var(--_block-gutter) * -1);
-  }
+.scroll-container-2-even-shorter-and-longer {
+    width: clamp(200px, 57vw, 1600px);
+    height: clamp(40px, 19vw, 280px);
+    margin: 0 auto;
+    overflow:scroll;
 }
 
-.collection-list {
+ol {
+  scroll-behavior: smooth;
+  align-content: center;
+  position:relative;
   display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 1rem 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 0 0 0 1rem;
+  scroll-padding-left: 5.5vw; /* Same as gutter */
+  scroll-snap-type: x mandatory;
 }
-
-.collection-list > li {
-  display: grid;
+ol li {
+  align-content: center;
   scroll-snap-align: start;
+  padding: 0 1rem 0 0;
+}
+ol li div.card {
+  background-color: var(--clr-bg-alt);
+  border-radius: 9px;
+  align-content: center;
+  height: clamp(120px, 35vw, 570px);
+  width: 20vw;
 }
 
-#collection-2 {
-  position: relative;
-  inline-size: min(65rem, 100% - var(--space-l) * 2);
-  margin-inline: auto;
-
-  .scrolly-rail-wrapper {
-    display: grid;
-    border-inline: 1px dashed var(--border-color);
-  }
-
-  .collection-list {
-    gap: var(--space-m);
-  }
-
-  .placeholder-item {
-    display: grid;
-    place-items: center;
-    inline-size: 10%;
-    aspect-ratio: 2 / 1;
-    border: 1px solid var(--border-color);
-    border-radius: 0.4rem;
-  }
-
-  .scrolly-rail-controls {
-    --stack-space: var(--space-s);
-    display: flex;
-    gap: var(--space-s);
-    inline-size: fit-content;
-    margin-inline: auto;
-  }
-
-  .btn-scrolly-rail--previous {
-    margin-inline-start: var(--control-margin-offset);
-  }
-
-  .btn-scrolly-rail--next {
-    --x-offset-direction: -1;
-    margin-inline-end: var(--control-margin-offset);
-  }
-}

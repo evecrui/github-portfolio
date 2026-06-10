@@ -70,24 +70,30 @@
           </div>
                   
           <div class="overlay" style="bottom:0%; height: 23.5%; text-align: center;">
-            <div style="padding-top: 1%; background:none" id="collection-2" class="collection layout-stack">
-                <h3 style="background:none;" class="about__role">Iterations Overview</h2>
-                <div style="background:none;" class="scrolly-rail-wrapper">
-                <scrolly-rail data-control-previous="collection-2-btn-previous" data-control-next="collection-2-btn-next">
-                    <ol class="collection-list" role="list">
-                    <li class="placeholder-item">1</li>
-                    <li class="placeholder-item">2</li>
-                    <li class="placeholder-item">3</li>
-                    <li class="placeholder-item">4</li>
-                    <li class="placeholder-item">5</li>
-                    <li class="placeholder-item">6</li>
-                    <li class="placeholder-item">7</li>
-                    <li class="placeholder-item">
-                        <img src="LevelTopDownPathCleanFinal.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+            <div style="background: none;" class="scroll-container-2-even-shorter-and-longer">
+                <ol>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                            Blah blah blah blah blah
+                        </div></button>
                     </li>
-                    </ol>
-                </scrolly-rail>
-                </div>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card" id="target-section">
+                            <img src="MechanicIteration-2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-4.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-5.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                </ol>
             </div>
           </div>
             <div class="panel" style="padding-top:3%; padding-bottom: 0%;">
@@ -103,7 +109,25 @@
       <section id="description" class="section panels">
           <div class="panels__grid">
               <div class="panel">
-                  <img src="LevelTopDownPathCleanFinal.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                <div style="padding-top: 1%; background:none" id="collection-2" class="collection layout-stack">
+                    <div style="background:none;" class="scrolly-rail-wrapper">
+                        <scrolly-rail data-control-previous="collection-2-btn-previous" data-control-next="collection-2-btn-next">
+                            <ol  draggable="true" class="collection-list" role="list">
+                            <li class="placeholder-item">
+                                <img src="LevelTopDownPathCleanFinal.png" alt="Level path, top down" style="inline-size:150%;"></li>
+                            <li class="placeholder-item-2">2</li>
+                            <li class="placeholder-item-2">3</li>
+                            <li class="placeholder-item-2">4</li>
+                            <li class="placeholder-item-2">5</li>
+                            <li class="placeholder-item-2">6</li>
+                            <li class="placeholder-item-2">7</li>
+                            <li class="placeholder-item-2">
+                                <img src="LevelTopDownPathCleanFinal.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                            </li>
+                            </ol>
+                        </scrolly-rail>
+                    </div>
+                </div>
               </div>
               <div class="panel">
                   <h1 class="panel__description">
@@ -140,7 +164,39 @@
           </div>
           <div class="panels__grid">
               <div class="panel">
-                  <img src="WFCBanner.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                  <img src="Sightline-1.png" alt="Sockets" style="width:90%;border-radius: 2%; margin-bottom: 1em;">
+              </div>
+              <div class="panel">
+                <div class="scroll-container-2">
+                <ol>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="Lighting1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                            Blah blah blah blah blah
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="Lighting2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card" id="target-section">
+                            <img src="Lighting3.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="Lighting4.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="Lighting5.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                </ol>
+                </div>
               </div>
               <div class="panel">
                   <h1 class="panel__description">
@@ -148,15 +204,49 @@
                   </h1>
                   <p class="panel__description">
                       <br />
-                      Sightlines, lighting, mechanics progression
+                      The three things I'm most proud of in this project are the <b>sightlines</b>, <b>lighting</b> and <b>mechanical progression</b>.<br><br>
+                      <b>Sightlines:</b> These guides the player up the tower, giving them their first and only major goal, reaching the top.<br>
+                      <b>Lighting:</b> Guides players through each minor section, acting similarly to yellow paint, though far more discreet.<br>
+                      <b>Mechanical progression:</b> Teaches the player how to use mechanics not commonly found in any other level, to the point 
+                      where the player can complete a gauntlet of jumps before reaching the end of the level.
                   </p>
               </div>
               <div class="panel">
-                  <img src="WFCBanner.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-              </div>
-              
-              <div class="panel">
-                  <img src="WFCBanner.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                <div class="scroll-container-2">
+                <ol>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                            Blah blah blah blah blah
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card" id="target-section">
+                            <img src="MechanicIteration-2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-4.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-5.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-6.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-7.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                </ol>
+                </div>
               </div>
           </div>
           <div class="panels__grid">
@@ -166,8 +256,36 @@
                   </h1>
                   <p class="panel__description">
                       <br />
-                      BLAME !, Vivarium, Cyberpunk, Celeste
+                      Both BLAME ! and Vivarium were two huge aesthetical inspirations for this project, inspiring the repetitive enormous structures of this world.<br><br>
+                      Cyberpunk and Celeste were the other two inspirations, with the lighting and unfriendliness of the first, while taking inspiration from the gameplay of the latter.
                   </p>
+              </div>
+              <div class="panel">
+                <div class="scroll-container-2-shorter">
+                <ol>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                            Blah blah blah blah blah
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card" id="target-section">
+                            <img src="MechanicIteration-2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-4.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToThis(this)"><div class="card">
+                            <img src="MechanicIteration-5.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                        </div></button>
+                    </li>
+                </ol>
+                </div>
               </div>
           </div>
           <div class="panels__grid">
@@ -177,8 +295,25 @@
                   </h1>
                   <p class="panel__description">
                       <br />
-                      DRAW A MAP EVEEEE. Then show map, models, playtest feedback, video of playthrough
-                  </p>
+                      DRAW A MAP EVEEEE. Then show video of playthrough
+
+                      <br><br><b>Feedback</b>: <br>Theming 8/10<br>Guidance 4/10
+                      <br><b>Learnt</b>: <br>
+                      <ul class="ul">
+                        <li>Keep the theming</li>
+                        <li>Improve the player paths and geometry to make decisions more subconsious</li>
+                        <li>Give players more of an introduction to the mechanics the level presents</li>
+                      </ul>
+                    </p>
+              </div>
+              <div class="panel">
+                  <img src="Iteration-1-level-1.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+              </div>
+              <div class="panel">
+                  <img src="Iteration-1-level-2.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+              </div> 
+              <div class="panel">
+                  <img src="Iteration-1-level-3.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
               </div>
           </div>
           <div class="panels__grid">

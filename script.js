@@ -61,3 +61,7 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+function scrollToThis(element) {
+	element.scrollIntoView({block: "center", inline: "start"});
+}
