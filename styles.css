@@ -340,6 +340,19 @@ main {
     grid-gap: 0.7em;
 }
 
+.panels__grid-base {
+  border-top: 7px solid var(--clr-primary);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    padding: 1em;
+    place-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 0.7em;
+}
+
 .panel {
     grid-template-columns: repeat(auto-fit, minmax(5em, 19em));
 }
@@ -501,7 +514,7 @@ main {
 }
 
 .scroll-container-2-shorter {
-    width: clamp(140px, 32vw, 550px);
+    width: clamp(140px, 32vw, 500px);
     height: clamp(120px, 28vw, 400px);
     margin: 0 auto;
     overflow:scroll;
@@ -539,4 +552,12 @@ ol li div.card {
   align-content: center;
   height: clamp(100px, 26vw, 400px);
   width: 25vw;
+}
+
+ol li div.card-small {
+  background-color: var(--clr-bg-alt);
+  border-radius: 9px;
+  align-content: center;
+  height: clamp(100px, 26vw, 300px);
+  width: 15vw;
 }

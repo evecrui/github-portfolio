@@ -76,28 +76,28 @@
             <div style="background: none;" class="scroll-container-2-even-shorter-and-longer">
                 <ol>
                     <li>
-                        <button onclick="scrollToThis(this)"><div class="card">
+                        <button onclick="scrollToThis(this)"><div class="card-small">
                             <img src="Iteration1Map.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                            Blah blah blah blah blah
+                            
                         </div></button>
                     </li>
                     <li>
-                        <button onclick="scrollToThis(this)"><div class="card" id="target-section">
+                        <button onclick="scrollToThis(this)"><div class="card-small" id="target-section">
                             <img src="Iteration2Map.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
                         </div></button>
                     </li>
                     <li>
-                        <button onclick="scrollToThis(this)"><div class="card">
+                        <button onclick="scrollToThis(this)"><div class="card-small">
                             <img src="Iteration3Map.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
                         </div></button>
                     </li>
                     <li>
-                        <button onclick="scrollToThis(this)"><div class="card">
+                        <button onclick="scrollToThis(this)"><div class="card-small">
                             <img src="Iteration4Map.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
                         </div></button>
                     </li>
                     <li>
-                        <button onclick="scrollToThis(this)"><div class="card">
+                        <button onclick="scrollToThis(this)"><div class="card-small">
                             <img src="Iteration5Map.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
                         </div></button>
                     </li>
@@ -115,7 +115,7 @@
 
 
       <section id="description" class="section panels">
-          <div class="panels__grid" style="background-color: var(--clr-bg-l5);">
+          <div class="panels__grid-base" style="background-color: var(--clr-bg-l5);">
               <div class="panel">
                 <div class="scroll-container-2-shorter">
                 <ol>
@@ -158,7 +158,7 @@
                   </p>
               </div>
           </div>
-          <div class="panels__grid">
+          <div class="panels__grid-base">
               <div class="panel">
                   <h1 class="panel__description">
                       Maps
@@ -179,12 +179,12 @@
                   <img src="LevelTopDownPathCleanFinal.png" alt="Level path, top down" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
               </div>
           </div>
-          <div class="panels__grid">
+          <div class="panels__grid-base">
               <div class="panel">
                   <img src="Sightline-1.png" alt="Sockets" style="width:90%;border-radius: 2%; margin-bottom: 1em;">
               </div>
               <div class="panel">
-                <div class="scroll-container-2">
+                <div class="scroll-container-2-shorter">
                 <ol>
                     <li>
                         <button onclick="scrollToThis(this)"><div class="card">
@@ -232,7 +232,7 @@
                   </p>
               </div>
               <div class="panel">
-                <div class="scroll-container-2">
+                <div class="scroll-container-2-shorter">
                 <ol>
                     <li>
                         <button onclick="scrollToThis(this)"><div class="card">
@@ -274,7 +274,7 @@
                 </div>
               </div>
           </div>
-          <div class="panels__grid">
+          <div class="panels__grid-base">
               <div class="panel">
                   <h1 class="panel__description">
                       Inspirations
@@ -308,24 +308,13 @@
                 </div>
               </div>
           </div>
-          <div class="panels__grid" style="background-color: var(--clr-bg-l1);">
-              <div class="panel">
-                  <h1 class="panel__description">
-                      Iteration #1. Blockout.
-                  </h1>
-                  <p class="panel__description">
-                      <b>Results:</b><br>Started roughly blocking out the drawn map, also started spacing out the mechanics that will be seen later to see how they feel.
-                      <br>The scope was too large, so I worked on spacing out the sections for the players to move through. I planned to expand these later.
-                      <br><br><b>Feedback received: </b> 
-                      <br> - The pathing was really hard to follow, very unintuitive.
-                      <br> - The mechanics can be hard to pick up and there isn't much room to learn.
-                    </p>
-              </div>
-              <div class="panel">
-                <img src="Iteration1Map.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-              </div>
-              <div class="panel">
-                <div class="scroll-container-2-shorter">
+          
+          <div>
+            <div><h1 style="display: flex; justify-content: center; border-top: 7px solid var(--clr-primary); padding-top: 0.1em; background-color: var(--clr-bg-l4)">
+                Iterations #1. Blockout.<br>
+            </h1></div>
+            <div class="panels__grid" style="background-color: var(--clr-bg-l4);">
+                <div class="scroll-container-2" style="text-align: right;background-color: var(--clr-bg-l5);">
                 <ol>
                     <li><button onclick="scrollToThis(this)"><div class="card">
                             <img src="Iteration-1-level-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
@@ -340,81 +329,91 @@
                             Lastly is a big momentum jump to skip past the rest of the guards and reach the top.
                         </div></button></li>
                 </ol>
+                    </div>
+                    <div class="panel">
+                        <video style="padding-left: 10%;" width="100%" controls muted>
+                            <source src="Iteration-1-playthrough.mp4" type="video/mp4">
+                            <source src="Iteration-1-playthrough.mp4" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <img src="Iteration1Map.png" alt="Sockets" style="padding-left: 10%; width:100%;border-radius: 2%; margin-bottom: 1em;">
+                    </div>
                 </div>
-              </div>
-              <div class="panel">
-                <video style="padding-left: 10%;" width="100%" controls muted>
-                    <source src="Iteration-1-playthrough.mp4" type="video/mp4">
-                    <source src="Iteration-1-playthrough.mp4" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-              </div>
-          </div>
-          <div class="panels__grid" style="background-color: var(--clr-bg-l2);">
-              <div class="panel">
-                  <h1 class="panel__description">
-                      Iterations #2. Alpha.
-                  </h1>
-                  <p class="panel__description">
-                      <b>Results:</b>
-                      <br> - I struggled to change what I had built, so I started from scratch building up the areas with the knowledge of how much space I need for them.
-                      <br> - I also implemented a tutorial area for the player to learn the basics of the mechanics with zero consequences for failing, before needing to put them into practice.
-                      <br> - Lastly I started blocking out interior sections, sculpting a path for the player to move through.
+                <div style="display: flex; justify-content: center; padding: 2em; padding-left: 10%; padding-right: 10%; background-color: var(--clr-bg-l4)">
+                    <p>
+                      <b>Results:</b><br>Started roughly blocking out the drawn map, also started spacing out the mechanics that will be seen later to see how they feel.
+                      <br>The scope was too large, so I worked on spacing out the sections for the players to move through. I planned to expand these later.
                       <br><br><b>Feedback received: </b> 
-                      <br> - The spaces were too small, and the editor wasn't built for such small rooms. The players struggled moving through them.
+                      <br> - The pathing was really hard to follow, very unintuitive.
+                      <br> - The mechanics can be hard to pick up and there isn't much room to learn.
                     </p>
-              </div>
-              <div class="panel">
-                <img src="Iteration2Map.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-              </div>
-              <div class="panel">
-                <div class="scroll-container-2-shorter">
-                <ol>
-                    <li><button onclick="scrollToThis(this)"><div class="card">
-                            <img src="Iteration-2-Main-Pic.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                            Blah blah blah blah blah
-                        </div></button></li>
-                    <li><button onclick="scrollToThis(this)"><div class="card" id="target-section">
-                            <img src="Iteration-2-Pt-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                        </div></button></li>
-                    <li><button onclick="scrollToThis(this)"><div class="card">
-                            <img src="Iteration-2-Pt-2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                        </div></button></li>
-                    <li><button onclick="scrollToThis(this)"><div class="card">
-                        <img src="Iteration-2-Pt-3.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                        </div></button></li>
-                    <li><button onclick="scrollToThis(this)"><div class="card">
-                        <img src="Iteration-2-Pt-4.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                        </div></button></li>
-                </ol>
                 </div>
-              </div>
-              <div class="panel">
-                <video style="padding-left: 10%;" width="100%" controls muted>
-                    <source src="Iteration-2-playthrough.mp4" type="video/mp4">
-                    <source src="Iteration-2-playthrough.mp4" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-              </div>
-          </div>
+            </div>
+
+
+
           <div>
-            <div class="panels__grid" style="background-color: var(--clr-bg-l3);">
-                <div class="panel">
-                    <h1 class="panel__description">
-                        Iterations #3. Beta.
-                    </h1>
-                    
+            <div><h1 style="display: flex; justify-content: center; border-top: 7px solid var(--clr-primary); padding-top: 0.1em; background-color: var(--clr-bg-l4)">
+                Iterations #2. Alpha.<br>
+            </h1></div>
+            <div class="panels__grid" style="background-color: var(--clr-bg-l4);">
+                <div class="scroll-container-2" style="text-align: right;background-color: var(--clr-bg-l5);">
+                        <ol>
+                            <li><button onclick="scrollToThis(this)"><div class="card">
+                                    <img src="Iteration-2-Main-Pic.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                                    
+                                </div></button></li>
+                            <li><button onclick="scrollToThis(this)"><div class="card" id="target-section">
+                                    <img src="Iteration-2-Pt-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                                </div></button></li>
+                            <li><button onclick="scrollToThis(this)"><div class="card">
+                                    <img src="Iteration-2-Pt-2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                                </div></button></li>
+                            <li><button onclick="scrollToThis(this)"><div class="card">
+                                <img src="Iteration-2-Pt-3.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                                </div></button></li>
+                            <li><button onclick="scrollToThis(this)"><div class="card">
+                                <img src="Iteration-2-Pt-4.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                                </div></button></li>
+                        </ol>
+                    </div>
+                    <div class="panel">
+                        <video style="padding-left: 10%;" width="100%" controls muted>
+                            <source src="Iteration-2-playthrough.mp4" type="video/mp4">
+                            <source src="Iteration-2-playthrough.mp4" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <img src="Iteration2Map.png" alt="Sockets" style="width:100%;padding-left: 10%; border-radius: 2%; margin-bottom: 1em;">
+                    </div>
                 </div>
-                <div class="panel">
-                    <div class="scroll-container-2-shorter">
+                <div style="display: flex; justify-content: center; padding: 2em; padding-left: 10%; padding-right: 10%; background-color: var(--clr-bg-l4)">
+                    <p>
+                        <b>Results:</b>
+                        <br> - I struggled to change what I had built, so I started from scratch building up the areas with the knowledge of how much space I need for them.
+                        <br> - I also implemented a tutorial area for the player to learn the basics of the mechanics with zero consequences for failing, before needing to put them into practice.
+                        <br> - Lastly I started blocking out interior sections, sculpting a path for the player to move through.
+                        <br><br><b>Feedback received: </b> 
+                        <br> - The spaces were too small, and the editor wasn't built for such small rooms. The players struggled moving through them.
+                    </p>
+                </div>
+            </div>
+
+
+
+          <div>
+            <div><h1 style="display: flex; justify-content: center; border-top: 7px solid var(--clr-primary); padding-top: 0.1em; background-color: var(--clr-bg-l4)">
+                Iterations #3. Beta.<br>
+                </h1></div>
+            <div class="panels__grid" style="background-color: var(--clr-bg-l4);">
+                <div class="scroll-container-2" style="text-align: right;background-color: var(--clr-bg-l5);">
                     <ol>
                         <li><button onclick="scrollToThis(this)"><div class="card">
                                 <img src="Iteration-3-pt-0.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                                Blah blah blah blah blah
+                                
                             </div></button></li>
                         <li><button onclick="scrollToThis(this)"><div class="card">
                                 <img src="Iteration-3-pt-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                                Blah blah blah blah blah
+                                
                             </div></button></li>
                         <li><button onclick="scrollToThis(this)"><div class="card" id="target-section">
                                 <img src="Iteration-3-pt-2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
@@ -432,7 +431,6 @@
                             <img src="Iteration-3-pt-6.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
                             </div></button></li>
                     </ol>
-                    </div>
                 </div>
                 <div class="panel">
                     <video style="padding-left: 10%;" width="100%" controls muted>
@@ -440,11 +438,11 @@
                         <source src="Iteration-3-walkthrough.mp4" type="video/ogg">
                         Your browser does not support the video tag.
                     </video>
-                    <img src="Iteration3Map.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                    <img src="Iteration3Map.png" alt="Sockets" style="width:100%;border-radius: 2%; padding-left: 10%; margin-bottom: 1em;">
                 </div>
             </div>
             <div style="display: flex; justify-content: center; padding: 2em; padding-left: 10%; padding-right: 10%; background-color: var(--clr-bg-l4)">
-                <p class="panel__description">
+                <p>
                     <b>Results:</b>
                     <br> - I moved the level beginning to outside, looking onto the tower, and moved the tutorial to inside the building. 
                     <br> - I also made the path inside more linear, using different more reliable obstacles for the players to move through.
@@ -467,11 +465,11 @@
                     <ol>
                         <li><button onclick="scrollToThis(this)"><div class="card">
                             <img src="Iteration-4-pt-0.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                            Blah blah blah blah blah
+                            
                         </div></button></li>
                         <li><button onclick="scrollToThis(this)"><div class="card">
                             <img src="Iteration-4-pt-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                            Blah blah blah blah blah
+                            
                         </div></button></li>
                         <li><button onclick="scrollToThis(this)"><div class="card" id="target-section">
                             <img src="Iteration-4-pt-2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
@@ -513,11 +511,11 @@
                     <ol>
                     <li><button onclick="scrollToThis(this)"><div class="card">
                             <img src="Iteration-5-pt-0.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                            Blah blah blah blah blah
+                            
                         </div></button></li>
                     <li><button onclick="scrollToThis(this)"><div class="card">
                             <img src="Iteration-5-pt-1.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                            Blah blah blah blah blah
+                            
                         </div></button></li>
                     <li><button onclick="scrollToThis(this)"><div class="card" id="target-section">
                             <img src="Iteration-5-pt-2.png" alt="Sockets" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
