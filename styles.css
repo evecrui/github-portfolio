@@ -318,12 +318,12 @@ main {
 }
 
 .projects__grid {
+    justify-content: center; /* Centers horizontally */
   padding: 1em;
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  height: 60em;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 0.5fr));
   grid-gap: 2em;
 }
 
@@ -354,6 +354,14 @@ main {
 
 .panel {
     grid-template-columns: repeat(auto-fit, minmax(5em, 19em));
+}
+
+.cropped-video {
+  width: 100%;
+  height: clamp(250px, 30vw, 600px);
+  padding-right: 5%;
+  object-fit: cover; /* Forces the video to fill the 300x300 box */
+  object-position: center; /* Determines which part stays visible (e.g., center, top, left) */
 }
 
 .project {
@@ -399,8 +407,9 @@ main {
 .project__stack-item {
   margin: 0.5em;
   font-weight: 500;
-  font-size: 0.3rem;
   color: var(--clr-fg-alt);
+  background-color: var(--clr-bg-alt);
+  padding: 0.5em;
 }
 
 .project .link--icon {
@@ -503,60 +512,98 @@ main {
   }
 }
 
-.scroll-container-2 {
-    width: clamp(140px, 35vw, 700px);
-    height: clamp(180px, 42vw, 700px);
-    margin: 0 auto;
-    overflow:scroll;
-    border: 2px solid var(--clr-primary);
-    border-radius: 30px;
+
+
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.scroll-container-2-shorter {
-    width: clamp(140px, 32vw, 500px);
-    height: clamp(120px, 28vw, 400px);
-    margin: 0 auto;
-    overflow:scroll;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.scroll-container-2-even-shorter-and-longer {
-    width: clamp(200px, 57vw, 1600px);
-    height: clamp(40px, 16vw, 200px);
-    margin: 0 auto;
-    overflow:scroll;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-ol {
-  scroll-behavior: smooth;
-  align-content: center;
-  position:relative;
-  display: flex;
-  flex-wrap: nowrap;
-  list-style: none;
-  margin: 1rem 0;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  padding: 0 0 0 1rem;
-  scroll-padding-left: 5.5vw; /* Same as gutter */
-  scroll-snap-type: x mandatory;
-}
-ol li {
-  align-content: center;
-  scroll-snap-align: start;
-  padding: 0 1rem 0 0;
-}
-ol li div.card {
-  background-color: var(--clr-bg-alt);
-  border-radius: 9px;
-  align-content: center;
-  height: clamp(100px, 26vw, 400px);
-  width: 25vw;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-ol li div.card-small {
-  background-color: var(--clr-bg-alt);
-  border-radius: 9px;
-  align-content: center;
-  height: clamp(100px, 20vw, 250px);
-  width: 12vw;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
