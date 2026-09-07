@@ -14,14 +14,6 @@
   box-shadow: none;
   box-sizing: border-box;
 }
-html {
-    background-color: #a1b8c7;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    scroll-behavior: smooth;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
@@ -29,29 +21,37 @@ body {
 }
 
 .light {
-  --clr-bg: #fcfcfc;
-  --clr-bg-trans: #fcfcfcd3;
-  --clr-bg-alt: #fff;
-  --clr-fg: #555;
-  --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-bg: #EBEFEE;
+  --clr-bg-trans: #EBEFEE;
+  --clr-bg-alt: #CCB499;
+  --clr-fg: #292929;
+  --clr-fg-alt: #4A413C;
+  --clr-primary: #BB6C43;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .dark {
-  --clr-bg: #23283e;
+  --clr-bg: #292929;
   --clr-bg-l5: #3a4370;
   --clr-bg-l4: #313b5c;
   --clr-bg-l3: #30375c;
   --clr-bg-l2: #2d3250;
   --clr-bg-l1: #262a44;
   --clr-bg-trans: #23283ed3;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-bg-alt: #4A413C;
+  --clr-fg: #EBEFEE;
+  --clr-fg-alt: #BB6C43;
+  --clr-primary: #CCB499;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+html {
+    background-color: var(--clr-bg-alt);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
 }
 
 ::-moz-selection {
@@ -71,6 +71,7 @@ h3,
 h4 {
   line-height: 1.2;
   color: var(--clr-fg-alt);
+  background-color: transparent;
 }
 
 h1 {
@@ -163,7 +164,6 @@ button {
   font-weight: 500;
   font-size: clamp(6px, 1.1vw, 18px);
   text-transform: lowercase;
-  transition: transform 0.2s ease-in-out;
 }
 
 .btn--outline {
@@ -201,6 +201,7 @@ button {
   background-color: var(--clr-bg-alt);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border: 0;
+  transition: transform 0.2s ease-in-out;
 }
 
 .btn--plain:hover {
@@ -235,6 +236,7 @@ button {
   top: 0;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 10px;
   max-width: 1150px;
   left: 50%;
   transform: translateX(-50%);
