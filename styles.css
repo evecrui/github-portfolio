@@ -80,6 +80,13 @@ h4 {
   background-color: transparent;
 }
 
+.h0 {
+  line-height: 1.2;
+  color: var(--clr-fg-alt);
+  background-color: transparent;
+  font-size: clamp(65px, 5vw, 90px);
+}
+
 h1 {
   font-size: clamp(32px, 3vw, 60px);
 }
@@ -458,7 +465,7 @@ main {
 }
 
 .skills__list {
-  max-width: 400px;
+  max-width: 700px;
   width: 95%;
   margin: 0 auto;
   display: flex;
