@@ -104,7 +104,7 @@ h4 {
 }
 
 p, ol, ul {
-  font-size: clamp(9px, 1.05vw, 30px);
+  font-size: clamp(12px, 1.15vw, 30px);
 }
 
 ul {
@@ -347,7 +347,7 @@ main {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(10%);
-  grid-gap: 2em;
+  grid-gap: 0.5em;
 }
 
 .panels__grid {
@@ -414,8 +414,8 @@ main {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
-  width: clamp(100px, 20vw, 400px);
-  height: auto;
+  width: clamp(200px, 23vw, 400px);
+  height: 100%;
   background-color: var(--clr-bg-l2);
   border-radius: 0.5em;
 }
@@ -466,8 +466,9 @@ main {
 
 .skills__list {
   max-width: 700px;
-  width: 95%;
+  width: 60%;
   margin: 0 auto;
+  margin-bottom: 3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
