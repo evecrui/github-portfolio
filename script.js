@@ -13,6 +13,27 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+var contents = document.getElementsByClassName("content");
+var btnLefts = document.getElementsByClassName("scroll-left");
+var btnRights = document.getElementsByClassName("scroll-right");
+
+btnLefts[0].addEventListener("click", function () {
+	contents[0].scrollLeft -= 300;
+});
+
+btnRights[0].addEventListener("click", function () {
+	contents[0].scrollLeft += 300;
+});
+
+btnLefts[1].addEventListener("click", function () {
+	contents[1].scrollLeft -= 300;
+});
+
+btnRights[1].addEventListener("click", function () {
+	contents[1].scrollLeft += 300;
+});
+
+
 const body = document.body
 const html = document.documentElement
 
