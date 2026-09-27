@@ -25,7 +25,7 @@ if (btnLefts.length >= 1) {
 	btnRights[0].addEventListener("click", function () {
 		contents[0].scrollLeft += 300;
 	});
-	
+
 	btnLefts[1].addEventListener("click", function () {
 		contents[1].scrollLeft -= 300;
 	});
@@ -130,11 +130,15 @@ function currentSlide(n, no) {
 function showSlides(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex[no]-1].style.display = "block";
+  if(x != null) {
+	if (n > x.length) {slideIndex[no] = 1}
+	if (n < 1) {slideIndex[no] = x.length}
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	if (x[slideIndex[no]-1] != null) {
+		x[slideIndex[no]-1].style.display = "block";
+	}
+	}
 } 
 
