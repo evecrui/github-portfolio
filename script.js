@@ -39,6 +39,9 @@ if (btnLefts.length >= 1) {
 
 const body = document.body
 const html = document.documentElement
+if (!(html.classList.contains("light") || html.classList.contains("dark"))) {
+  html.classList.add("dark")
+}
 
 const btnTheme = document.querySelector('.fa-moon')
 const btnHamburger = document.querySelector('.fa-bars')
