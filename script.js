@@ -39,8 +39,16 @@ if (btnLefts.length >= 1) {
 
 const body = document.body
 const html = document.documentElement
-if (!(html.classList.contains("light") || html.classList.contains("dark"))) {
-  html.classList.add("dark")
+if (!html.classList.contains('light') && !html.classList.contains('dark')) {
+  	html.classList.add('dark')
+	localStorage.setItem('portfolio-theme', 'dark')
+	localStorage.setItem('portfolio-btn-theme', 'fa-moon')
+} else if (html.classList.contains('dark')) {
+	localStorage.setItem('portfolio-theme', 'dark')
+	localStorage.setItem('portfolio-btn-theme', 'fa-moon')
+} else if (html.classList.contains('light')) {
+	localStorage.setItem('portfolio-theme', 'light')
+	localStorage.setItem('portfolio-btn-theme', 'fa-sun')
 }
 
 const btnTheme = document.querySelector('.fa-moon')

@@ -28,7 +28,6 @@ body {
   --clr-bg-l2: #f0eae3;
   --clr-bg-l1: #e7dfd5;
   --clr-bg-trans: #EBEFEEd3;
-  --clr-bg-trans: #EBEFEE;
   --clr-bg-alt: #CCB499;
   --clr-fg: #292929;
   --clr-fg-alt: #4A413C;
@@ -369,6 +368,8 @@ main {
 
 .panel {
     grid-template-columns: repeat(auto-fit, minmax(5em, 19em));
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .cropped-video {
@@ -404,21 +405,18 @@ main {
 .scroll-left, .scroll-right {
   position: absolute;
   z-index: 1;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
+  padding: 0.6em;
   margin-top: 35%;
   border-radius: 50%;
   border: 4px solid var(--clr-primary);
 }
 .scroll-left {
-  padding-left: 0.7em;
-  padding-right: 1.2em;
-  left: -10%;
+  left: 0;
+  padding-right: 0.4em;
 }
 .scroll-right {
-  padding-right: 0.7em;
-  padding-left: 1.2em;
-  right: -10%;
+  right: 0;
+  padding-left: 0.4em;
 }
 
 .project {
