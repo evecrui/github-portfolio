@@ -88,7 +88,7 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(32px, 3vw, 60px);
+  font-size: clamp(18px, 3.5vw, 70px);
 }
 
 h2 {
@@ -103,8 +103,8 @@ h4 {
   font-size: clamp(10px, 1.5vw, 50px);
 }
 
-p, ol, ul {
-  font-size: clamp(12px, 1.15vw, 30px);
+p, ol, ul, .text {
+  font-size: clamp(10px, 1.5vw, 30px);
 }
 
 ul {
@@ -122,12 +122,6 @@ a {
 
 button {
   cursor: pointer;
-}
-
-@media (max-width: 900px) {
-  h1 {
-  font-size: clamp(10px, 2.6vw, 20px);
-  }
 }
 
 /*===================
@@ -249,7 +243,7 @@ button {
   top: 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 0.2em;
   max-width: 1150px;
   left: 50%;
   transform: translateX(-50%);
@@ -264,12 +258,11 @@ button {
 
 main {
   position: relative;
-  padding-top: 40px; /* Adjust this value to be equal to the header's height + desired spacing */
-  padding-bottom: 40px;
+  padding-top: 4.5em; /* Adjust this value to be equal to the header's height + desired spacing */
+  padding-right: 2%;
+  padding-left: 2%;
   max-width: 1100px;
-  width: 70%;
   margin: 0 auto;
-  margin-bottom: 0px;
   background-color: var(--clr-bg);
 }
 
@@ -286,8 +279,11 @@ main {
   text-transform: uppercase;
 }
 
-.section__subtitle {
+.collapsible {
   text-align: center;
+  padding: 0.4em;
+  padding-top: 0.2ems;
+  border-top: 7px solid var(--clr-primary);
   background-color: var(--clr-bg-alt);
 }
 
@@ -316,14 +312,11 @@ main {
 }
 
 .about__name {
+  text-align: right;
   color: var(--clr-primary);
 }
 
-.about__role {
-}
-
 .about__desc {
-  font-size: 1rem;
   max-width: 600px;
 }
 
@@ -365,10 +358,8 @@ main {
   border-top: 7px solid var(--clr-primary);
     display: flex;
     justify-content: center; /* Centers horizontally */
-    padding: 1em;
     place-items: center;
     max-width: 1100px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 48% 48%;
     grid-gap: 0.7em;
@@ -452,10 +443,12 @@ main {
   background-color: var(--clr-bg-trans);
   text-align: right;
   position: absolute;
-  padding: 1em;
+  padding: 0.7em;
+  padding-right: 0.2em;
   --w: calc(100vw/1px);
   bottom:0%;
   width: 100%;
+  height: auto;
   z-index: 1;
   opacity: 100%;
 }
@@ -488,10 +481,12 @@ main {
 }
 
 .skills__list {
+  padding-top: 2%;
   max-width: 700px;
-  width: 60%;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -506,11 +501,11 @@ main {
 }
 
 .footer {
+    margin: 0 auto;
     margin-top: 0px;
     left: 50%;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
     background-color: var(--clr-bg);
     padding: 1em 0;
     text-align: center;
@@ -540,12 +535,10 @@ main {
 
   .section {
     margin-top: 4em;
-    display: flex;
     align-items: center;
-      display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
 
   .nav__list {
@@ -582,7 +575,6 @@ main {
 
   .footer {
     padding: 2em;
-    margin-top: 3em;
   }
 
   .scroll-container {
@@ -642,7 +634,6 @@ main {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
   padding: 8px 12px;
   bottom: 0px;
   width: 100%;
