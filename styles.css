@@ -99,7 +99,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(14px, 2.5vw, 25px);
+  font-size: clamp(14px, 2.5vw, 20px);
 }
 
 p, ol, ul, .text {
