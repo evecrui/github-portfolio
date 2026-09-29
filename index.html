@@ -53,14 +53,14 @@
 
     <main>
       <!-- About -->
-      <div class="about center" style="border-bottom: 7px solid var(--clr-primary); padding-bottom: 0.5em;">
+      <div class="about center" style="border-bottom: 7px solid var(--clr-primary); ">
         <img src="CowPickup-ezgif.com-crop.gif" alt="Cow" style="width:100%;">
         </div>
       </div>
 
       <!-- About -->
       <div class="about center">
-        <h1 style="padding-top: 1%;">Hi, I am <span class="about__name">Eve Cruickshank.</span></h1>
+        <h1 style="padding-top: 1%;">Hi, I am <span class="about__name">Eve Cruickshank,</span></h1>
         <h2 class="about__role">A Game Developer.</h2>
         <p class="about__desc">
           I love to work on <b>procedural generation</b>, <b>MR</b>, and <b>VR</b> games using <b>Unity</b> and <b>C#</b>,
@@ -68,8 +68,8 @@
         </p>
 
         <div class="about__contact center">
-          <a href="Resume.pdf">
-            <span class="btn btn--outline">Resume</span>
+          <a href="./GameDevResume.pdf">
+            <span class="btn btn--outline"><p>Resume</p></span>
           </a>
 
           <a
@@ -115,16 +115,16 @@
       <!-- Projects -->
       <section id="projects" class="section projects" style="border-top: 7px solid var(--clr-primary); padding-top: 1em; margin-top: 0em;">
         <h2 class="section__title">Projects</h2>
-        <div style="text-align: center;">
-          <button type="button" class="collapsible" style="width: auto; margin-top: 1em;">
-            <h3 class="section__subtitle">Programming<span class="fas fa-arrow-down"></span></h3>
-          </button>
+        <div>
           <div class="project-container content" style="display: block;">
-
-          <button class="scroll-left"><h1 class="fas fa-arrow-left"></h1></button>
-          <button class="scroll-right"><h1 class="fas fa-arrow-right"></h1></button>
-
-            <div class="projects__grid">
+            <button type="button" class="collapsible">
+              <h3 class="section__subtitle">Programming<span class="fas fa-arrow-down"></span></h3>
+            </button>
+            
+            
+            <div class="projects__grid" style="display: grid;">
+              <button class="scroll-left"><h1 class="fas fa-arrow-left"></h1></button>
+              <button class="scroll-right"><h1 class="fas fa-arrow-right"></h1></button>
               <div class="centered">
                 <div class="project wrap" onclick='location.href = "RhythmAdventure.html";'>
                   <img src="img4.PNG" alt="VR Screenshot" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
@@ -167,7 +167,7 @@
                   <h3>God's Architect</h3>
                   <p class="project__description">
                       A <b>voxel building game</b>, where you balance both the <b>will of the gods</b>
-                      and your own, rebuilding <b>crumbling ruins</b>, or <b>starting fresh</b> in defiance.
+                      and your own, rebuilding <b>crumbling ruins</b>, or <b>starting afresh</b> in defiance.
                   </p>
                   <ul class="project__stack">
                       <li class="project__stack-item btn--plain">Unity</li>
@@ -197,101 +197,101 @@
           </div>
         </div>
 
-        <div style="text-align: center;">
-          <button type="button" class="collapsible" style="width: auto;  margin-top: 1em;">
-            <h3 class="section__subtitle"><pre>Art  |  Design<span class="fas fa-arrow-down"></span></pre></h3> 
-          </button>
+        <div>
           <div class="project-container content" style="display: block;">
             
-          <button class="scroll-left"><h1 class="fas fa-arrow-left"></h1></button>
-          <button class="scroll-right"><h1 class="fas fa-arrow-right"></h1></button>
-            <div class="projects__grid-2">
-              <div class="centered">
-              <div class="project">
-                  <img src="CommissionImgSquare.png" alt="Voxel Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                  <h3>Commission Work</h3>
-                  <p class="project__description">
-                      I worked for someone to create a VRChat avatar, which involved a lot of learning and a lot of iteration and perfecting.
-                  </p>
-                  <ul class="project__stack">
+            <button type="button" class="collapsible">
+              <h3 class="section__subtitle"><pre>Art  |  Design<span class="fas fa-arrow-down"></span></pre></h3> 
+            </button>
+            <div class="projects__grid-2" style="display: grid;">
+                <button class="scroll-left"><h1 class="fas fa-arrow-left"></h1></button>
+                <button class="scroll-right"><h1 class="fas fa-arrow-right"></h1></button>
+                <div class="centered">
+                <div class="project">
+                    <img src="CommissionImgSquare.png" alt="Voxel Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                    <h3>Commission Work</h3>
+                    <p class="project__description">
+                        I worked for a client to create a VRChat avatar, which involved a lot of learning, iteration and perfecting. I also worked with AI code to complete a VRChat scene.
+                    </p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item btn--plain">Blender</li>
+                        <li class="project__stack-item btn--plain">VRChat</li>
+                        <li class="project__stack-item btn--plain">Rigging</li>
+                        <li class="project__stack-item btn--plain">Many Iteration</li>
+                        <li class="project__stack-item btn--plain">Unity</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="centered">
+                <div class="project wrap" onclick='location.href = "JORB.html";'>
+                    <img src="JimothySquare.png" alt="Voxel Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                    <h3>JORB: Super Jimothy Ball</h3>
+                    <p class="project__description">
+                        JORB is a fast-paced <b>multiplayer arena game</b> where Jimothy fights for trash in the streets and skies of Seattle! 
+                        <br>I did <b>every building model</b> over the course of a <b>week</b>.
+                    </p>
+                    <ul class="project__stack">
                       <li class="project__stack-item btn--plain">Blender</li>
-                      <li class="project__stack-item btn--plain">VRChat</li>
-                      <li class="project__stack-item btn--plain">Rigging</li>
-                      <li class="project__stack-item btn--plain">Many Iteration</li>
-                      <li class="project__stack-item btn--plain">Unity</li>
-                  </ul>
+                      <li class="project__stack-item btn--plain">Game Jam</li>
+                        <li class="project__stack-item btn--plain">Unity</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              
-              <div class="centered">
-              <div class="project wrap" onclick='location.href = "JORB.html";'>
-                  <img src="JimothySquare.png" alt="Voxel Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                  <h3>JORB: Super Jimothy Ball</h3>
-                  <p class="project__description">
-                      JORB is a fast-paced <b>multiplayer arena game</b> where Jimothy fights for trash in the streets and skies of Seattle! 
-                      <br>I did <b>every building model</b> over the course of a <b>week</b>.
-                  </p>
-                  <ul class="project__stack">
-                    <li class="project__stack-item btn--plain">Blender</li>
-                    <li class="project__stack-item btn--plain">Game Jam</li>
-                      <li class="project__stack-item btn--plain">Unity</li>
-                  </ul>
-                </div>
-              </div>
-              
-              
-              <div class="centered">
-                <div class="project wrap" onclick='location.href = "LevelDesignProject.html";'>
-                  <img src="LevelDevSquare.png" alt="Voxel Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                  <h3>Level Design</h3>
-                  <p class="project__description">
-                    A <b>voxel building game</b>, where you balance both the <b>will of the gods</b>
-                    and your own, rebuilding <b>crumbling ruins</b>, or <b>starting fresh</b> in defiance.
-                  </p>
-                  <ul class="project__stack">
-                    <li class="project__stack-item btn--plain">Unity</li>
-                    <li class="project__stack-item btn--plain">C#</li>
-                    <li class="project__stack-item btn--plain">Proc Gen</li>
-                    <li class="project__stack-item btn--plain">Custom Editor</li>
-                  </ul>
-                  
-                  <a
-                  href="https://github.com"
-                  aria-label="source code"
-                  class="link link--icon"
-                  >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-              </div>
-              </div>
-
-              
-              <div class="centered">
-              <div class="project">
-                  <img src="SheepWranglerSquare.png" alt="Voxel Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
-                  <h3>Sheep Wrangler</h3>
-                  <p class="project__description">
-                      A <b>2D</b> game where you <b>protect your sheep</b>, expanding your flock
-                      as you go. I worked on the <b>design</b>, some <b>programming</b>, and some <b>level design</b>. 
-                  </p>
-                  <ul class="project__stack">
+                
+                
+                <div class="centered">
+                  <div class="project wrap" onclick='location.href = "LevelDesignProject.html";'>
+                    <img src="LevelDevSquare.png" alt="Voxel Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                    <h3>Level Design</h3>
+                    <p class="project__description">
+                      A <b>voxel building game</b>, where you balance both the <b>will of the gods</b>
+                      and your own, rebuilding <b>crumbling ruins</b>, or <b>starting fresh</b> in defiance.
+                    </p>
+                    <ul class="project__stack">
                       <li class="project__stack-item btn--plain">Unity</li>
                       <li class="project__stack-item btn--plain">C#</li>
-                      <li class="project__stack-item btn--plain">Design</li>
-                      <li class="project__stack-item btn--plain">Level Dev</li>
-                  </ul>
-
-                  <a
-                      href="https://github.com"
-                      aria-label="source code"
-                      class="link link--icon"
-                  >
-                      <i aria-hidden="true" class="fab fa-itch-io"></i>
+                      <li class="project__stack-item btn--plain">Proc Gen</li>
+                      <li class="project__stack-item btn--plain">Custom Editor</li>
+                    </ul>
+                    
+                    <a
+                    href="https://github.com"
+                    aria-label="source code"
+                    class="link link--icon"
+                    >
+                    <i aria-hidden="true" class="fab fa-github"></i>
                   </a>
                 </div>
-              </div>
+                </div>
+
+                
+                <div class="centered">
+                <div class="project">
+                    <img src="SheepWranglerSquare.png" alt="Voxel Generation" style="width:100%;border-radius: 2%; margin-bottom: 1em;">
+                    <h3>Sheep Wrangler</h3>
+                    <p class="project__description">
+                        A <b>2D</b> game where you <b>protect your sheep</b>, expanding your flock
+                        as you go. I worked on the <b>design</b>, some <b>programming</b>, and some <b>level design</b>. 
+                    </p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item btn--plain">Unity</li>
+                        <li class="project__stack-item btn--plain">C#</li>
+                        <li class="project__stack-item btn--plain">Design</li>
+                        <li class="project__stack-item btn--plain">Level Dev</li>
+                    </ul>
+
+                    <a
+                        href="https://github.com"
+                        aria-label="source code"
+                        class="link link--icon"
+                    >
+                        <i aria-hidden="true" class="fab fa-itch-io"></i>
+                    </a>
+                  </div>
+                </div>
+            </div>
           </div>
-        </div>
         </div>
         
       </section>
