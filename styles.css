@@ -87,7 +87,7 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(30px, 6vw, 80px);
+  font-size: clamp(30px, 6vw, 60px);
 }
 
 h2 {
@@ -99,11 +99,11 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(14px, 2.5vw, 50px);
+  font-size: clamp(14px, 2.5vw, 25px);
 }
 
 p, ol, ul, .text {
-  font-size: clamp(12px, 1.7vw, 30px);
+  font-size: clamp(12px, 1.7vw, 18px);
 }
 
 ul {
@@ -366,7 +366,8 @@ main {
     grid-template-columns: 40% 40%;
     padding-top: 2%;
     padding-bottom: 2%;
-    grid-gap: 5em;
+    grid-column-gap: 4.5em;
+    align-content: center;
 }
 
 .panel {

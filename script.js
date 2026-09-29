@@ -48,8 +48,14 @@ const addThemeClass = (bodyClass, btnClass) => {
   btnTheme.classList.add(btnClass)
 }
 
+if (localStorage.getItem('portfolio-theme') == null) {
+	localStorage.setItem('portfolio-theme', 'dark')
+	localStorage.setItem('portfolio-btn-theme', 'fa-moon')
+}
+
 const getBodyTheme = localStorage.getItem('portfolio-theme')
 const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
+
 
 addThemeClass(getBodyTheme, getBtnTheme)
 
